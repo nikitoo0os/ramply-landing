@@ -3,7 +3,7 @@ import { Code, TestTube, Rocket, TrendingUp } from 'lucide-react';
 
 const roadmapSteps = [
   {
-    phase: 'Q3 2025',
+    phase: 'Q1 2026',
     title: 'MVP и тестирование',
     status: 'В процессе',
     statusColor: 'bg-orange-100 text-orange-700 border-orange-200',
@@ -16,7 +16,7 @@ const roadmapSteps = [
     ],
   },
   {
-    phase: 'Q4 2025',
+    phase: 'Q2 2026',
     title: 'Расширение функционала',
     status: 'Планируется',
     statusColor: 'bg-blue-100 text-blue-700 border-blue-200',
@@ -29,20 +29,20 @@ const roadmapSteps = [
     ],
   },
   {
-    phase: 'Q1 2026',
+    phase: 'Q4 2026',
     title: 'Публичный запуск',
     status: 'Планируется',
     statusColor: 'bg-violet-100 text-violet-700 border-violet-200',
     icon: Rocket,
     items: [
       'Официальный релиз платформы',
-      'Запуск маркетинговой камп��нии',
+      'Запуск маркетинговой кампании',
       'Открытие продаж по тарифам',
       'Набор первых 100 клиентов',
     ],
   },
   {
-    phase: 'Q2 2026',
+    phase: 'Q1 2027',
     title: 'Масштабирование',
     status: 'Планируется',
     statusColor: 'bg-emerald-100 text-emerald-700 border-emerald-200',
@@ -133,7 +133,7 @@ export function RoadmapSection() {
           <h3 className="text-2xl mb-3">С вашими инвестициями мы ускорим запуск в 2 раза</h3>
           <p className="text-orange-200 mb-6 max-w-2xl mx-auto">
             Дополнительные ресурсы позволят нам нанять сильную команду, ускорить разработку 
-            и начать привлечение клиентов уже в Q4 2025
+            и начать привлечение клиентов уже в Q3 2026
           </p>
           <div className="flex flex-wrap justify-center gap-8 text-center">
             <div>
@@ -145,7 +145,7 @@ export function RoadmapSection() {
               <div className="text-orange-300 text-sm">Расширение команды</div>
             </div>
             <div>
-              <div className="text-3xl mb-1">₽1.7M</div>
+              <div className="text-3xl mb-1">₽1.2M</div>
               <div className="text-orange-300 text-sm">Маркетинговый бюджет</div>
             </div>
           </div>
