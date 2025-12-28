@@ -40,7 +40,7 @@ export function Footer() {
               <li><a href="#" className="hover:text-slate-900 transition-colors">Pitch Deck</a></li>
               <li><a href="#" className="hover:text-slate-900 transition-colors">Финансы</a></li>
               <li><a href="#" className="hover:text-slate-900 transition-colors">Команда</a></li>
-              <li><a href="#" className="hover:text-slate-900 transition-colors">Связаться</a></li>
+              <li><a href="tel:+79615698960" className="hover:text-slate-900 transition-colors">+7 (961) 569-89-60</a></li>
             </ul>
           </div>
         </div>

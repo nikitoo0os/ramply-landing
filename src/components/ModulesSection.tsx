@@ -4,6 +4,13 @@ import { Database, BarChart3, Megaphone, Lightbulb, ArrowRight } from 'lucide-re
 const modules = [
   {
     icon: Database,
+    title: 'Товарный и складской учёт',
+    description: 'Полный контроль остатков, партий, перемещений товара. Автоматизация инвентаризации и управление складом',
+    features: ['Учёт остатков по складам', 'Партионный учёт', 'Автоматическая инвентаризация', 'Контроль перемещений'],
+    color: 'from-emerald-500 to-teal-500',
+  },
+  {
+    icon: Database,
     title: 'Интеграция с маркетплейсами',
     description: 'Двусторонняя синхронизация товаров, заказов, остатков и финансов с WB и Ozon',
     features: ['API v3 Wildberries', 'Seller API Ozon', 'Синхронизация в реальном времени', 'Автообновление данных'],
@@ -21,14 +28,7 @@ const modules = [
     title: 'Управление рекламой',
     description: 'Автоматизация рекламных кампаний, оптимизация ставок, ROI-анализ по каждой SKU',
     features: ['Автостратегии ставок', 'A/B тестирование', 'Контроль бюджетов', 'Отчёты по эффективности'],
-    color: 'from-orange-500 to-red-500',
-  },
-  {
-    icon: Lightbulb,
-    title: 'AI-рекомендации',
-    description: 'Подбор прибыльных товаров, прогнозирование спроса, рекомендации по ассортименту и ценам',
-    features: ['Скоринг товаров', 'Прогноз маржинальности', 'Анализ конкурентов', 'Оптимизация портфеля'],
-    color: 'from-emerald-500 to-teal-500',
+    color: 'from-orange-500 to-amber-500',
   },
 ];
 
@@ -47,7 +47,7 @@ export function ModulesSection() {
             Четыре модуля — полный цикл торговли
           </h2>
           <p className="text-xl text-slate-600 max-w-3xl mx-auto">
-            Каждый модуль решает критическую задачу продавца и работает в связке с остальными
+            Каждый модуль решает кртическую задачу продавца и работает в связке с остальными
           </p>
         </motion.div>
         
@@ -77,7 +77,7 @@ export function ModulesSection() {
                 ))}
               </div>
               
-              <div className="flex items-center gap-2 text-violet-600 group-hover:gap-3 transition-all">
+              <div className="flex items-center gap-2 text-orange-600 group-hover:gap-3 transition-all">
                 <span className="text-sm">Подробнее</span>
                 <ArrowRight className="w-4 h-4" />
               </div>

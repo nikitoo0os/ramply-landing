@@ -66,7 +66,7 @@ export function TargetAudienceSection() {
               transition={{ duration: 0.6, delay: index * 0.15 }}
               className="relative p-8 bg-white border border-slate-200 rounded-2xl shadow-lg hover:shadow-xl transition-all"
             >
-              <div className="w-14 h-14 bg-gradient-to-br from-violet-500 to-purple-600 rounded-2xl flex items-center justify-center mb-6 shadow-lg shadow-violet-500/30">
+              <div className="w-14 h-14 bg-gradient-to-br from-orange-500 to-amber-600 rounded-2xl flex items-center justify-center mb-6 shadow-lg shadow-orange-500/30">
                 <audience.icon className="w-7 h-7 text-white" />
               </div>
               
@@ -76,14 +76,14 @@ export function TargetAudienceSection() {
               <div className="space-y-3 mb-6">
                 {audience.needs.map((need, i) => (
                   <div key={i} className="flex items-start gap-2">
-                    <div className="w-1.5 h-1.5 rounded-full bg-violet-500 mt-2 flex-shrink-0"></div>
+                    <div className="w-1.5 h-1.5 rounded-full bg-orange-500 mt-2 flex-shrink-0"></div>
                     <span className="text-slate-600 text-sm">{need}</span>
                   </div>
                 ))}
               </div>
               
               <div className="pt-6 border-t border-slate-200">
-                <div className="text-violet-600 text-sm">Размер рынка</div>
+                <div className="text-orange-600 text-sm">Размер рынка</div>
                 <div className="text-slate-900 text-lg mt-1">{audience.size}</div>
               </div>
             </motion.div>
@@ -95,7 +95,7 @@ export function TargetAudienceSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.5 }}
-          className="mt-12 p-8 bg-gradient-to-r from-violet-50 to-purple-50 border border-violet-200 rounded-2xl text-center shadow-lg"
+          className="mt-12 p-8 bg-gradient-to-r from-orange-50 to-amber-50 border border-orange-200 rounded-2xl text-center shadow-lg"
         >
           <div className="text-4xl text-slate-900 mb-2">82,500+</div>
           <div className="text-slate-600">Потенциальных клиентов на старте (только РФ)</div>

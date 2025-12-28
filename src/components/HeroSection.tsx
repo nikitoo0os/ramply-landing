@@ -5,23 +5,23 @@ export function HeroSection() {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
       {/* Animated background gradient */}
-      <div className="absolute inset-0 bg-gradient-to-br from-violet-50 via-white to-purple-50" />
+      <div className="absolute inset-0 bg-gradient-to-br from-orange-50 via-white to-amber-50" />
       
       {/* Grid pattern */}
       <div className="absolute inset-0 bg-[linear-gradient(to_right,#8b5cf610_1px,transparent_1px),linear-gradient(to_bottom,#8b5cf610_1px,transparent_1px)] bg-[size:24px_24px]" />
       
       {/* Glow effect */}
-      <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-violet-200/40 rounded-full blur-[120px]" />
+      <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-orange-200/40 rounded-full blur-[120px]" />
       
       <div className="relative max-w-7xl mx-auto px-6 py-20 text-center">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="inline-flex items-center gap-2 px-4 py-2 bg-violet-100 border border-violet-200 rounded-full mb-8"
+          className="inline-flex items-center gap-2 px-4 py-2 bg-orange-100 border border-orange-200 rounded-full mb-8"
         >
-          <Zap className="w-4 h-4 text-violet-600" />
-          <span className="text-violet-700 text-sm">Интеллектуальная ERP для маркетплейсов RAMPLY</span>
+          <Zap className="w-4 h-4 text-orange-600" />
+          <span className="text-orange-700 text-sm">Pre-launch • Ищем инвестиции для завершения разработки</span>
         </motion.div>
         
         <motion.h1
@@ -42,8 +42,8 @@ export function HeroSection() {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="text-xl text-slate-600 mb-12 max-w-2xl mx-auto"
         >
-          От подбора прибыльных товаров до автоматизации рекламы. 
-          Единая платформа для роста выручки и снижения убытков.
+          Разрабатываем умную ERP-систему для продавцов маркетплейсов. 
+          От товарного учёта до AI-аналитики — всё для роста вашего бизнеса.
         </motion.p>
         
         <motion.div
@@ -52,12 +52,12 @@ export function HeroSection() {
           transition={{ duration: 0.8, delay: 0.3 }}
           className="flex flex-col sm:flex-row items-center justify-center gap-4"
         >
-          <button className="group px-8 py-4 bg-violet-600 hover:bg-violet-700 text-white rounded-xl transition-all flex items-center gap-2 shadow-lg shadow-violet-600/30">
-            Запросить презентацию
+          <button className="group px-8 py-4 bg-orange-600 hover:bg-orange-700 text-white rounded-xl transition-all flex items-center gap-2 shadow-lg shadow-orange-600/30">
+            Стать инвестором
             <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
           </button>
           <button className="px-8 py-4 bg-white hover:bg-slate-50 text-slate-900 rounded-xl transition-colors border border-slate-200 shadow-sm">
-            Демо платформы
+            Ранний доступ к MVP
           </button>
         </motion.div>
         

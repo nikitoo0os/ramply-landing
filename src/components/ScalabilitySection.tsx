@@ -3,19 +3,23 @@ import { Globe2, Layers, Workflow, Rocket } from 'lucide-react';
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Area, AreaChart } from 'recharts';
 
 const growthData = [
-  { month: 'Q1 2024', revenue: 20 },
-  { month: 'Q2 2024', revenue: 45 },
-  { month: 'Q3 2024', revenue: 85 },
-  { month: 'Q4 2024', revenue: 160 },
-  { month: 'Q1 2025', revenue: 280 },
-  { month: 'Q2 2025', revenue: 450 },
+  { month: 'Q1 2026', revenue: 0.2 },
+  { month: 'Q2 2026', revenue: 0.8 },
+  { month: 'Q3 2026', revenue: 1.8 },
+  { month: 'Q4 2026', revenue: 3.2 },
+  { month: 'Q1 2027', revenue: 5.5 },
+  { month: 'Q2 2027', revenue: 8.5 },
+  { month: 'Q3 2027', revenue: 12 },
+  { month: 'Q4 2027', revenue: 16 },
+  { month: 'Q1 2028', revenue: 21 },
+  { month: 'Q2 2028', revenue: 27 },
 ];
 
 const scalingVectors = [
   {
     icon: Globe2,
     title: 'Географическая экспансия',
-    description: 'Казахстан, Беларусь, далее — Европа и Азия с локальными маркетплейсами',
+    description: 'Выход на рынки Казахстана и Беларуси с локальными маркетплейсами',
   },
   {
     icon: Layers,
@@ -29,8 +33,8 @@ const scalingVectors = [
   },
   {
     icon: Rocket,
-    title: 'Платформенная модель',
-    description: 'Маркетплейс сервисов для продавцов: дизайн, фото, юристы, бухгалтерия',
+    title: 'Платформнная модель',
+    description: 'Интеграция с внешними сервисами: складами, доставкой, аналитикой и рекламой',
   },
 ];
 
@@ -49,7 +53,7 @@ export function ScalabilitySection() {
             Потенциал масштабирования
           </h2>
           <p className="text-xl text-slate-600 max-w-3xl mx-auto">
-            Четыре вектора роста для достижения $100M ARR за 3 года
+            Консервативный прогноз органического роста с фокусом на качество продукта
           </p>
         </motion.div>
         
@@ -101,11 +105,11 @@ export function ScalabilitySection() {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
-              className="p-6 bg-white border border-slate-200 rounded-2xl hover:border-violet-300 hover:shadow-lg transition-all"
+              className="p-6 bg-white border border-slate-200 rounded-2xl hover:border-orange-300 hover:shadow-lg transition-all"
             >
               <div className="flex items-start gap-4">
-                <div className="w-12 h-12 bg-violet-50 rounded-xl flex items-center justify-center flex-shrink-0">
-                  <vector.icon className="w-6 h-6 text-violet-600" />
+                <div className="w-12 h-12 bg-orange-50 rounded-xl flex items-center justify-center flex-shrink-0">
+                  <vector.icon className="w-6 h-6 text-orange-600" />
                 </div>
                 <div>
                   <h3 className="text-slate-900 text-lg mb-2">{vector.title}</h3>
@@ -126,9 +130,9 @@ export function ScalabilitySection() {
         >
           {[
             { label: 'TAM', value: '$2.4B', sublabel: 'РФ + СНГ' },
-            { label: 'CAC', value: '₽15K', sublabel: 'окупается за 4 мес' },
-            { label: 'LTV', value: '₽180K', sublabel: 'за 3 года' },
-            { label: 'Churn', value: '5.8%', sublabel: 'годовой' },
+            { label: 'CAC', value: '₽15K', sublabel: 'прогноз' },
+            { label: 'LTV', value: '₽180K', sublabel: 'прогноз за 3 года' },
+            { label: 'Churn', value: '5.8%', sublabel: 'цель годовой' },
           ].map((metric, i) => (
             <div key={i} className="p-6 bg-white border border-slate-200 rounded-2xl text-center shadow-md">
               <div className="text-slate-600 text-sm mb-2">{metric.label}</div>

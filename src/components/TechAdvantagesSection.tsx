@@ -15,7 +15,7 @@ const advantages = [
   {
     icon: Zap,
     title: 'Real-time обработка',
-    description: 'Событийная архитектура (Kafka) для обработки данных в режиме реального времени',
+    description: 'Событийная архитектура (RabbitMQ) для обработки данных в режиме реального времени',
   },
   {
     icon: Cloud,
@@ -61,10 +61,10 @@ export function TechAdvantagesSection() {
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="p-6 bg-white border border-slate-200 rounded-2xl hover:border-violet-300 hover:shadow-lg transition-all"
+              className="p-6 bg-white border border-slate-200 rounded-2xl hover:border-orange-300 hover:shadow-lg transition-all"
             >
-              <div className="w-12 h-12 bg-violet-50 rounded-xl flex items-center justify-center mb-4">
-                <advantage.icon className="w-6 h-6 text-violet-600" />
+              <div className="w-12 h-12 bg-orange-50 rounded-xl flex items-center justify-center mb-4">
+                <advantage.icon className="w-6 h-6 text-orange-600" />
               </div>
               <h3 className="text-slate-900 mb-2">{advantage.title}</h3>
               <p className="text-slate-600 text-sm leading-relaxed">{advantage.description}</p>
@@ -82,14 +82,14 @@ export function TechAdvantagesSection() {
         >
           <h3 className="text-slate-900 text-xl mb-6 text-center">Tech Stack</h3>
           <div className="flex flex-wrap items-center justify-center gap-6">
-            {['React', 'Node.js', 'Python', 'PostgreSQL', 'ClickHouse', 'Kafka', 'Kubernetes', 'Redis', 'TensorFlow', 'GraphQL'].map((tech, i) => (
+            {['React', 'Node.js', 'Python', 'PostgreSQL', 'ClickHouse', 'RabbitMQ', 'Kubernetes', 'Redis', 'TensorFlow', 'GraphQL'].map((tech, i) => (
               <motion.div
                 key={i}
                 initial={{ opacity: 0, scale: 0.8 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.4, delay: i * 0.05 }}
-                className="px-4 py-2 bg-slate-50 border border-slate-200 rounded-lg text-slate-700 text-sm hover:border-violet-300 hover:text-slate-900 transition-all"
+                className="px-4 py-2 bg-slate-50 border border-slate-200 rounded-lg text-slate-700 text-sm hover:border-orange-300 hover:text-slate-900 transition-all"
               >
                 {tech}
               </motion.div>

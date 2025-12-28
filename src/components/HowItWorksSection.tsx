@@ -40,16 +40,16 @@ export function HowItWorksSection() {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl text-slate-900 mb-6">
-            Как работает платформа
+            Как будет работать платформа
           </h2>
           <p className="text-xl text-slate-600 max-w-3xl mx-auto">
-            От сырых данных до конкретных решений — непрерывный цикл роста
+            Планируемая архитектура: от сбора данных до роста прибыли клиентов
           </p>
         </motion.div>
         
         <div className="relative">
           {/* Connection line */}
-          <div className="hidden lg:block absolute top-1/2 left-0 right-0 h-0.5 bg-gradient-to-r from-violet-200 via-violet-300 to-violet-200"></div>
+          <div className="hidden lg:block absolute top-1/2 left-0 right-0 h-0.5 bg-gradient-to-r from-orange-200 via-orange-300 to-orange-200"></div>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 relative">
             {steps.map((item, index) => (
@@ -62,22 +62,22 @@ export function HowItWorksSection() {
                 className="relative"
               >
                 <div className="relative z-10 p-6 bg-white border border-slate-200 rounded-2xl shadow-lg">
-                  <div className="text-6xl font-bold bg-gradient-to-br from-violet-400 to-purple-600 bg-clip-text text-transparent mb-4 opacity-30">
+                  <div className="text-6xl font-bold bg-gradient-to-br from-orange-400 to-amber-600 bg-clip-text text-transparent mb-4 opacity-30">
                     {item.step}
                   </div>
                   
                   <h3 className="text-xl text-slate-900 mb-3">{item.title}</h3>
                   <p className="text-slate-600 text-sm leading-relaxed mb-4">{item.description}</p>
                   
-                  <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-violet-50 border border-violet-200 rounded-lg">
-                    <span className="text-violet-600 text-sm">{item.metric}</span>
+                  <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-orange-50 border border-orange-200 rounded-lg">
+                    <span className="text-orange-600 text-sm">{item.metric}</span>
                   </div>
                 </div>
                 
                 {/* Arrow between steps */}
                 {index < steps.length - 1 && (
                   <div className="hidden lg:flex absolute top-1/2 -right-4 -translate-y-1/2 z-20">
-                    <ArrowRight className="w-8 h-8 text-violet-400" />
+                    <ArrowRight className="w-8 h-8 text-orange-400" />
                   </div>
                 )}
               </motion.div>

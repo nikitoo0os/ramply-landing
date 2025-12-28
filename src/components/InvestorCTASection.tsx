@@ -14,23 +14,23 @@ export function InvestorCTASection() {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <div className="inline-flex items-center gap-2 px-4 py-2 bg-violet-100 border border-violet-200 rounded-full mb-8">
-            <span className="text-violet-700 text-sm">Инвестиционная возможность</span>
+          <div className="inline-flex items-center gap-2 px-4 py-2 bg-orange-100 border border-orange-200 rounded-full mb-8">
+            <span className="text-orange-700 text-sm">Инвестиционная возможность</span>
           </div>
           
           <h2 className="text-5xl md:text-6xl text-slate-900 mb-6">
-            Присоединяйтесь к росту рынка маркетплейсов
+            Инвестируйте в будущее e-commerce
           </h2>
           
           <p className="text-xl text-slate-600 mb-12 max-w-3xl mx-auto">
-            Мы ищем стратегического инвестора для масштабирования на рынки СНГ и развития AI-функционала. 
-            Раунд Seed: $2M на 18 месяцев до точки безубыточности.
+            Мы в финальной стадии разработки инновационной ERP-платформы для маркетплейсов. 
+            Ищем ₽10M для завершения продукта, масштабирования команды и выхода на рынок.
           </p>
           
           <div className="grid md:grid-cols-3 gap-6 mb-12">
             {[
               { icon: FileText, label: 'Pitch Deck', action: 'Скачать презентацию' },
-              { icon: Calendar, label: 'Demo', action: 'Запланировать встречу' },
+              { icon: Calendar, label: 'Demo MVP', action: 'Запланировать встречу' },
               { icon: Mail, label: 'Contact', action: 'investors@ramply.io' },
             ].map((item, i) => (
               <motion.div
@@ -39,11 +39,11 @@ export function InvestorCTASection() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: i * 0.1 }}
-                className="p-6 bg-white border border-slate-200 rounded-2xl hover:border-violet-300 hover:shadow-lg transition-all cursor-pointer group"
+                className="p-6 bg-white border border-slate-200 rounded-2xl hover:border-orange-300 hover:shadow-lg transition-all cursor-pointer group"
               >
-                <item.icon className="w-8 h-8 text-violet-600 mx-auto mb-4" />
+                <item.icon className="w-8 h-8 text-orange-600 mx-auto mb-4" />
                 <div className="text-slate-600 text-sm mb-2">{item.label}</div>
-                <div className="text-slate-900 text-sm group-hover:text-violet-600 transition-colors">{item.action}</div>
+                <div className="text-slate-900 text-sm group-hover:text-orange-600 transition-colors">{item.action}</div>
               </motion.div>
             ))}
           </div>
@@ -55,19 +55,19 @@ export function InvestorCTASection() {
             transition={{ duration: 0.6, delay: 0.4 }}
             className="flex flex-col sm:flex-row items-center justify-center gap-4"
           >
-            <button className="group px-10 py-5 bg-gradient-to-r from-violet-600 to-purple-600 hover:from-violet-700 hover:to-purple-700 text-white rounded-xl transition-all flex items-center gap-2 shadow-2xl shadow-violet-600/30 text-lg">
-              Запросить инвестиционные материалы
+            <button className="group px-10 py-5 bg-gradient-to-r from-orange-600 to-amber-600 hover:from-orange-700 hover:to-amber-700 text-white rounded-xl transition-all flex items-center gap-2 shadow-2xl shadow-orange-600/30 text-lg">
+              Стать инвестором проекта
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </button>
           </motion.div>
           
-          <div className="mt-16 pt-16 border-t border-violet-200">
+          <div className="mt-16 pt-16 border-t border-orange-200">
             <div className="grid md:grid-cols-4 gap-8 text-center">
               {[
-                { value: 'Seed', label: 'Стадия' },
-                { value: '$2M', label: 'Объём раунда' },
-                { value: '15-20%', label: 'Доля' },
-                { value: '18 мес', label: 'До break-even' },
+                { value: 'Pre-launch', label: 'Стадия' },
+                { value: '₽10M', label: 'Объём раунда' },
+                { value: 'до 25%', label: 'Доля' },
+                { value: '9 мес', label: 'До запуска' },
               ].map((stat, i) => (
                 <div key={i}>
                   <div className="text-3xl text-slate-900 mb-2">{stat.value}</div>
